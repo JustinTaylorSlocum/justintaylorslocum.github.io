@@ -27,13 +27,26 @@ body {
 	text-transform: uppercase;
 }
 
-#resumeButton {
+.main p {
+	color: #fff;
+    font-weight: 300;
+}
+
+.headerButton {
+    cursor: pointer;
+    text-align: center;
+    line-height: 1.3333333;
+    margin: 0px 5px;
+    font-weight: 300;
+    background: #00000017;
 	border-radius: 0;
     border-width: 2px;
     border-color: #fff;
     color: #fff;
-    background-color: rgb(255, 255, 255, 0.0);
-    margin: 0px 5px;
-    font-weight: 300;
+}
+
+#resumeButton {
+	padding: 10px 16px;
+	font-size: 18px;
     width: 400px;
 }
