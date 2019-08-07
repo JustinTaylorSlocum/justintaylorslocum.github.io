@@ -26,3 +26,14 @@ body {
 	font-weight: 100;
 	text-transform: uppercase;
 }
+
+#resumeButton {
+	border-radius: 0;
+    border-width: 2px;
+    border-color: #fff;
+    color: #fff;
+    background-color: rgb(255, 255, 255, 0.0);
+    margin: 0px 5px;
+    font-weight: 300;
+    width: 400px;
+}
