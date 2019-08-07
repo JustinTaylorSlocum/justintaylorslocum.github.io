@@ -2,10 +2,29 @@ body {
 	background: black;
 }
 
-#main {
+
+.wrapper {
+	display: table;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../resources/bg.jpg') no-repeat center center scroll;
+	background-size: cover;
+}
+
+.main {
 	width: 50%;
 	height: 50%;
 	opacity: 0.5;
 	background-color: white;
 	border-radius: 30px;
+}
+
+.main h1 {
+	margin: 0;
+	font-size: 0;
+	color: white;
+	font-size: 4.5em;
+	font-weight: 100;
+	text-transform: uppercase;
 }
