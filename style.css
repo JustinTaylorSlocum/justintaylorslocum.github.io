@@ -3,7 +3,8 @@
 body {
 	background: black;
 	    font-family: 'Raleway', sans-serif;
-        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./resources/bg.png') no-repeat center center scroll;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./resources/bg.png') no-repeat center center;
+        background-size: auto;
         width: auto;
         height: auto;
 }
