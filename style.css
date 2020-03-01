@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200&display=swap');
 
 body {
-	background: black;
-	    font-family: 'Raleway', sans-serif;
-        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./resources/bg.png') no-repeat center center;
-        background-size: auto;
-        width: auto;
-        height: auto;
+	font-family: 'Raleway', sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./resources/bg.png') no-repeat center center;
+    background-size: 100% 100%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -100,7 +100,6 @@ body {
     -webkit-transition: .5s opacity;
 }
 
-/*, .5s left, .5s top;*/
 
 .tooltip:after {
     content: '';
@@ -115,6 +114,57 @@ body {
     margin-bottom: -11px;
 }
 
+.ttbutton {
+    cursor: pointer;
+}
+
 .ttbutton > i {
 	font-style: normal;
+}
+
+.resumeOverlay {
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.resumeView {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background: rgb(255, 255, 255);
+    border-radius: 0px;
+    max-width: 70%;
+    max-height: 90%;
+    margin: auto;
+    z-index: 999;
+}
+
+.closeResume {
+    right: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #e6e6e673;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 42px;
+    font-weight: bolder;
+    color: black;
+    padding: 4px;
+    font-size: x-large;
+    z-index: 1000;
+}
+
+.closeResume:hover {
+    background: #e6e6e6;
+    -webkit-transition: .5s background;
 }
