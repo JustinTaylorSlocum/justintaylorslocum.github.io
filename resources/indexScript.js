@@ -3,7 +3,6 @@ var mouseOnConButton = false;
 window.onload = function() {
 	$('.wrapper').css('opacity', 1);
 	contactIconInteraction();
-	resumeButton();
 	$('body').mousemove(function(e) {
 		if (mouseOnConButton) {
 			$('.tooltip').css('left', e.pageX - 35);
@@ -21,14 +20,5 @@ function contactIconInteraction() {
 	}, function() {
 		mouseOnConButton = false;
 		$('.tooltip').css('opacity', '0');
-	});
-}
-
-function resumeButton() {
-	$('.ttButton').eq(3).click(function() {
-		$("body").append("<div class=\"resumeOverlay\"><div class=\"closeResume\">X</div><div class=\"resumeView\"><iframe src=\"./resources/JustinTaylorSlocumResume.pdf\" style=\"height:100%;width:100%;\"></iframe></div></div>");
-		$('.closeResume').click(function() {
-			$('.resumeOverlay').remove();
-		});
 	});
 }
