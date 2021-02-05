@@ -13,7 +13,7 @@ body {
 .wrapper {
 	display: table;
 	opacity: 0;
-	-webkit-transition: opacity 1.5s;
+	-webkit-transition: opacity .75s;
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -29,15 +29,16 @@ body {
 .main h1 {
 	margin: 0;
 	font-size: 0;
-	color: white;
+	color: black;
 	font-size: 4.5em;
 	font-weight: 100;
 	text-transform: uppercase;
 }
 
 .main p {
-	color: #fff;
-    font-weight: 300;
+	color: #000;
+    font-weight: bold;
+    margin: 19px;
 }
 
 .headerButton {
@@ -64,7 +65,7 @@ body {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 40px;
+    font-size: 55px;
     padding-top: 45px;
 }
 
@@ -73,7 +74,7 @@ body {
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
-    color: black;
+    color: #12212d;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     padding: 10px;
@@ -81,7 +82,7 @@ body {
 }
 
 .contactIcons a:hover {
-	color: red;
+	color: white;
 	font-size: 60px;
 }
 
