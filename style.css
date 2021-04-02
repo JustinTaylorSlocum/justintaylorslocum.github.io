@@ -2,16 +2,17 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./resources/bg.jpg') no-repeat center center fixed;
-    background-size: cover;  
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('./resources/bg.jpg') no-repeat center center;
+    background-size: 100% 100%;  
     min-width: 100%;
     overflow: hidden;
     position: relative;
     height: 100%;
-    width: 100%;
+    width: 100%; 
+    overflow-y: hidden;
+    overflow-x: hidden;
     margin: 0;
     min-height: 405px;
-    overflow-x: hidden;
 }
 
 .wrapper {
@@ -96,9 +97,11 @@ body {
     text-align: center;
     color: white;
     line-height: 27px;
+    display: none;
     color: white;
     opacity: 0;
     -webkit-transition: .5s opacity;
+
 }
 
 
@@ -113,6 +116,7 @@ body {
     border-bottom: 0;
     margin-left: -14px;
     margin-bottom: -11px;
+
 }
 
 .ttbutton {
